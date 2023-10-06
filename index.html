@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corretora de Imovéis</title>~
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    * {
+        font-family: comfortaa, cursive;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    body,
+    html,
+    h1,
+    h2,
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    #parte-de-cima-do-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    #parte-de-cima-do-header a {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+
+    #parte-de-cima-do-header a span {
+        color: #DA8300;
+    }
+
+    #parte-de-cima-do-header ul {
+        display: flex;
+        align-items: center;
+    }
+
+    #parte-de-cima-do-header ul li {
+        padding: 0 15px;
+    }
+
+    #parte-de-cima-do-header ul li a {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        display: block;
+    }
+
+    #parte-de-cima-do-header ul li a#link {
+        padding: 9px 20px;
+        background-color: #03A300;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+
+    h1,
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: 100px;
+
+    }
+
+    h3 {
+        margin-top: 15px;
+    }
+
+    h2,
+    p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 15px;
+        max-width: 770px;
+    }
+
+    .imoveis {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .imoveis>div {
+        width: 31.8%;
+    }
+
+    .imoveis img {
+        width: 100%;
+    }
+
+    .imoveis h3 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .imoveis p {
+        text-align: center;
+        width: 90%;
+        color: #666666
+    }
+
+    .imoveis>div a {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        background-color: #03A300;
+        display: block;
+        border-radius: 10px;
+        margin-top: 15px;
+        padding: 9px 15px;
+        font-weight: bold;
+    }
+
+    #map {
+        width: 70%;
+        margin: auto;
+    }
+
+    #map iframe {
+        margin-top: 15px;
+        width: 100%;
+        height: 350px;
+        border: 0;
+    }
+
+    #map h1 {
+        margin-top: 100px;
+    }
+
+    #trio {
+        width: 70%;
+        margin: auto;
+
+    }
+
+    #trio ul {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding: 0;
+    }
+
+    #trio ul li {
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+        background-color: #DA8300;
+        border-radius: 10px;
+        padding: 12px 32px;
+
+    }
+
+    #trio ul li a {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    #footer {
+        background-color: #DA8300;
+        margin-top: 110px;
+        padding: 40px 0;
+    }
+
+    #centro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    #centro ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #centro ul li a {
+        color: white;
+        font-weight: bold;
+    }
+
+    #centro ul li {
+        color: white;
+        font-weight: bold;
+    }
+
+    #centro a {
+        color: white;
+        font-weight: bold;
+    }
+
+    #fim {
+        width: 100%;
+        text-align: center;
+      font-size: 12px;
+        margin-top: 20px;
+        font-weight:lighter;
+
+    }
+</style>
+
+<body>
+    <header>
+        <section id="parte-de-cima-do-header">
+            <a href="#">José Roberto <span>Corretor</span></a>
+            <ul>
+                <li> <a href="#">Imóveis</a></li>
+                <li><a href="#2" id="link">Eu quero um imóvel</a></li>
+            </ul>
+        </section>
+        <section>
+            <img src="./banner.jpg" alt="banner">
+        </section>
+    </header>
+
+    <div>
+        <div class="container">
+            <h1>Confira nossos imóveis</h1>
+
+            <h2>Nós escolhemos os melhores imóveis para poder te apresentar, caso você queira ter seu imóvel apresentado
+                aqui, você precisa nos mandar mensagem no instagram ou whatsapp para podermos avaliar se compensa para
+                nós.
+            </h2>
+            <div class="imoveis">
+                <div>
+                    <img src="./1.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./2.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./3.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./4.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./5.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./6.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./7.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./8.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+                <div>
+                    <img src="./9.jpg" alt="imovel_1">
+                    <h3>Casa térrea bem bonita com piscina para sua família aproveitar</h3>
+                    <p>Dormitórios: 4 | Banheiros: 2 | Estacionamentos: 2</p>
+                    <a href="#4">entrar em contacto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map">
+        <h1>Onde estamos?</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55622.24031353314!2d-8.484884506976071!3d40.574791876461745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd230a1975a1a963%3A0x8cc7d3d6676f7a2!2sOronhe!5e1!3m2!1spt-PT!2spt!4v1696544048556!5m2!1spt-PT!2spt"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div id="trio">
+        <ul>
+            <li><a href="#">ENVIAR MENSAGEM PELO WHATSAPP</a></li>
+            <li><a href="#">LIGAR PARA MIM</a></li>
+            <li><a href="#">ENTRAR NO INSTAGRAM</a></li>
+        </ul>
+    </div>
+    <div id="footer">
+        <div id="centro">
+            <a href="#">José Roberto Corretor</a>
+            <ul>
+                <li><a href="#">Imóveis</a></li>
+                <li>|</li>
+                <li><a href="#">Quero um imóvel</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 id="fim">TODOS OS DIREITOS RESERVADOS</h1>
+
+</body>
+
+</html>
